@@ -2,6 +2,30 @@ let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
 
+document.addEventListener('DOMContentLoaded', function() {
+  function redirectToProject(url) {
+    return function(event) {
+      event.preventDefault();
+      window.location.href = url;
+    };
+  }
+  var project1Button = document.getElementById('project1-button');
+  project1Button.addEventListener('click', redirectToProject('https://sweat-final-project.vercel.app/'));
+
+  var project2Button = document.getElementById('project2-button');
+  project1Button.addEventListener('click', redirectToProject('https://ultraverse-nft-market.vercel.app/'));
+
+  var project3Button = document.getElementById('project3-button');
+  project3Button.addEventListener('click', redirectToProject('https://book-library-roan.vercel.app/'));
+
+  var project4Button = document.getElementById('project4-button');
+  project2Button.addEventListener('click', redirectToProject('https://gerich-resturant-phi.vercel.app/'));
+  
+  var project5Button = document.getElementById('project5-button');
+  project3Button.addEventListener('click', redirectToProject('https://book-library-roan.vercel.app/'));
+
+});
+
 function moveBackground(event) {
   const shapes = document.querySelectorAll(".shape");
   const x = event.clientX * scaleFactor

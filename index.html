@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Morris</title>
+    <title>LJ Green's E-portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/bb06d07dd1.js" crossorigin="anonymous"></script>
@@ -21,11 +21,11 @@
   <section id="landing-page" onmousemove="moveBackground(event)">
     <nav>
       <figure>
-        <img id="personal-logo" src="./assets/logo.svg" alt="">
+        <img id="personal-logo" src="./assets/Portfolio Logo.png" alt="">
       
       </figure>
-      <ul class="nav__link--list" onclick="toggleModal()">
-        <li class="nav__link">
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
           <a href="#" class="
             nav__link--anchor
             link__hover-effect
@@ -58,10 +58,8 @@
     <header class="header">
       <div class="header__content">
         <h1 class="title">Hey</h1>
-        <h1 class="title orange">I'm Alex</h1>
-        <p class="header__para">I'm a <b class="orange">Product Designer</b> with a strong passion for problem solving and delivering great user experiences.
-          <br>
-          Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
+        <h1 class="title orange">I'm LJ</h1>
+        <p class="header__para">Welcome to my e-portfolio! I am a highly motivated and aspiring <b class="orange">Junior Frontend developer</b> with a strong passion for creating captivating digital experiences. Equipped with a solid foundation in web development and a background in design, I am eager to contribute my skills and grow within a dynamic and collaborative environment.
         </p>
         <div class="social__list">
           <a href="#" class="social__link click">
@@ -87,28 +85,44 @@
     <div class="modal">
       <div class="modal__half modal__about">
         <h3 class="modal__title modal__title--about">Here's abit about me.</h3>
-        <h4 class="modal__sub-title modal__sub-title--about">Junior Product Designer</h4>
+        <h4 class="modal__sub-title modal__sub-title--about">Freelance Frontend Developer</h4>
         <p class="modal__para">
-          I'm a 21 year-old British <b class="orange">product designer</b> with experience designing and developping products that <b class="orange">solve every day frustrations</b>.
-          <br>
-          I currently solve extremely difficult user problems every day using a <b class="orange">refined design process and an array of powerful software</b>.
+          I have successfully built responsive and visually appealing websites. With considerable amount of attention to detail and a problem-solving mindset, I strive to deliver high-quality code while adhering to best practices and industry standards.</b>
         </p>
+        <p class="secondary__modal--para">
+          I am committed to continuously expanding my technical skill set and staying up-to-date with the latest trends and technologies in the ever-evolving field of front-end development. Please explore my portfolio to see examples of my work and feel free to contact me for any further information or opportunities.</p>.
         <div class="modal__languages">
           <figure class="modal__language">
             <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+            <span class="language__name">HTML5</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src='./assets/css logo.png' alt="">
+            <span class="language__name">CSS3 + Tailwind</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/js logo.png" alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/React logo.png" alt="">
+            <span class="language__name">React</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/adobe logo.png" alt="">
             <span class="language__name">Adobe CC</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+            <img class="modal__language--img" src="./assets/figma logo.png" alt="">
+            <span class="language__name">Figma</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/solidworks logo.jpg" alt="">
             <span class="language__name">Solidworks</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+            <img class="modal__language--img" src="./assets/keyshot logo.png" alt="">
             <span class="language__name">Keyshot</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
-            <span class="language__name">Figma</span>
           </figure>
         </div>
       </div>
@@ -147,7 +161,7 @@
           I'll get back to you as soon as I can.
           <br>
           <br>
-          -Alex Morris
+          -LJ Green
         </div>
       </div>
     </div>
@@ -165,28 +179,28 @@
     <div class="container">
       <div class="row">
         <h1 class="section__title">
-          Take a look at my <span class="orange">projects</span>
+          Take a look at my <span class="orange">Projects</span>
         </h1>
         <ul class="project__list">
           <li class="project">
             <div class="project__wrapper">
-              <img src="./assets/blinker mockup.png" class="project__img" alt="">
+              <img src="./assets/Solo mockup.png" class="project__img" alt="">
               <div class="project__wrapper--bg"></div>
               <div class="project__description">
                 <h3 class="project__description--title">
-                  Car Sales Projects
+                  Sweat - Exercises
                 </h3>
                 <h4 class="project__description--sub-title">
-                  HTML, CSS, JavaScript, Vue, Vuex
+                  HTML, CSS, JavaScript, React
                 </h4>
                 <p class="project__description--para">
-                  Google In-Store is a platform allowing Google retail employees to report any issues with their store products. Once an issue is reported, it is posted to an API which populates a separate platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was the sole front-end developer of this application.
+                  For my first independent front-end project, I conceptualized and developed an exercise search engine using HTML, CSS, JavaScript, and React. This dynamic web application empowers users to explore a vast database of 1,300 exercises, enabling them to search, filter, and add exercises to specific days of their workout routines. Additionally, users have the flexibility to modify weight numbers, ensuring personalized tracking and progress monitoring. This project showcases my proficiency in front-end development, UI design, and data manipulation, demonstrating my ability to create practical and interactive applications for fitness enthusiasts.
                 </p>
                 <div class="project__description--links">
                   <a href="#" class="project__description--link">
                     <i class="fa-brands fa-square-github"></i>
                   </a>
-                  <a href="#" class="project__description--link">
+                  <a href='https://sweat-final-project.vercel.app/' data-project="project1" class="project__description--link">
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
@@ -195,23 +209,97 @@
           </li>
           <li class="project">
             <div class="project__wrapper">
-              <img src="./assets/blinker mockup.png" class="project__img" alt="">
+              <img src="./assets/ultraverse mockup.png" class="project__img" alt="">
               <div class="project__wrapper--bg"></div>
               <div class="project__description">
                 <h3 class="project__description--title">
-                  Car Sales Projects
+                  Ultraverse NFT Market
                 </h3>
                 <h4 class="project__description--sub-title">
-                  HTML, CSS, JavaScript, Vue, Vuex
+                  HTML, CSS, JavaScript, React
                 </h4>
-                <p class="project__description--para">
-                  Google In-Store is a platform allowing Google retail employees to report any issues with their store products. Once an issue is reported, it is posted to an API which populates a separate platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was the sole front-end developer of this application.
+                <p class="project__description--para">           
+                  During a mini-internship, I had the opportunity to develop an NFT market project using while adhering to industry best practices. I delved into the intricacies of JavaScript, mastering concepts like modularization, error handling, and code optimization. I developed responsive and performant user interfaces such as caroussels and animations, utilizing component-based architecture and state management techniques for seamless experiences. This experience allowed me to sharpen my skills in front-end development and reinforced my commitment to logical code.
                 </p>
                 <div class="project__description--links">
                   <a href="#" class="project__description--link">
                     <i class="fa-brands fa-square-github"></i>
                   </a>
+                  <a href="https://ultraverse-nft-market.vercel.app/" data-project="project2" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Twitter mock up.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Twitter Clone
+                </h3>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript, Next.js, Redux, Firebase
+                </h4>
+                <p class="project__description--para">
+                  I developed a Twitter clone for my portfolio, leveraging Firebase for real-time user interactions. Through this project, I honed my skills in web development and had the opportunity to work with various frameworks. It showcases my ability to create dynamic web applications and utilize new technologies with versatility.
+                </p>
+                <div class="project__description--links">
                   <a href="#" class="project__description--link">
+                    <i class="fa-brands fa-square-github"></i>
+                  </a>
+                  <a href="https://twitter-clone-eta-olive.vercel.app/" data-project="project3" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Gerich Mock-up.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Gerich Resteraunt
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Figma, HTML, CSS, JavaScript, React
+                </h4>
+                <p class="project__description--para">
+                  My background in product design enabled me to develop a fantastic website for a luxury restaurant brand. With HTML, CSS, and JavaScript and React I created a visually appealing website that captures the brand's essence. Close attention to layout, typography, and colours in efforts of producing something engaging for viewers. My goal was to build a professional and user-friendly website that showcases the restaurants brand in the best possible light.
+                </p>
+                <div class="project__description--links">
+                  <a href="#" class="project__description--link">
+                    <i class="fa-brands fa-square-github"></i>
+                  </a>
+                  <a href="https://gerich-resturant-phi.vercel.app/" data-project="project4" id="book-library-button" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Book Library Mock-Up.png" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Book Library
+                </h3>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript, React
+                </h4>
+                <p class="project__description--para">
+                  Introducing the Book Library: a dynamic React-based web application that developed my front-end skills. Leveraging reusable components, smooth rendering, and seamless navigation with React Router, the library offers an immersive experience. By implementing responsive design, and following best practices, the project not only demonstrates my technical expertise but also delivers a user-centric and visually engaging interface. </p>
+                <div class="project__description--links">
+                  <a href="#" class="project__description--link">
+                    <i class="fa-brands fa-square-github"></i>
+                  </a>
+                  <a href="https://book-library-roan.vercel.app/" data-project="project5" id="book-library-button" class="project__description--link">
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
@@ -225,10 +313,10 @@
   <footer>
     <div class="container">
       <div class="row footer__row">
-        <figure>
-          <img class="footer__logo--img" src="assets/logo.svg" alt="">
-        
-        </figure>
+        <div>
+          <img class="footer__logo--img" src="assets/Portfolio Logo.png" alt="">
+        </div>
+        <h2 class="footer__header">Find out more about me here!</h2>
         <div class="footer__social--list">
           <a href="#" class="
             footer__social--link
@@ -237,14 +325,14 @@
           ">
             LinkedIn
           </a>
-          <a href="#" onclick="toggleModal()" class="
+          <a href="#" class="
             footer__social--link
             link__hover-effect
             link__hover-effect--white
           ">
             Email
           </a>
-          <a href="#" class="
+          <a href="#" onclick="toggleModal()" class="
             footer__social--link
             link__hover-effect
             link__hover-effect--white
@@ -252,7 +340,7 @@
             Resume
           </a>
         </div>
-        <div class="footer__copyright">Copyright © 2023 LJ Green</div>
+        <p class="footer__copyright">Copyright © 2023 LJ Green</p>
       </div>
     </div>
   </footer>

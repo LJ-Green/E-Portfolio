@@ -13,16 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
   project1Button.addEventListener('click', redirectToProject('https://sweat-final-project.vercel.app/'));
 
   var project2Button = document.getElementById('project2-button');
-  project1Button.addEventListener('click', redirectToProject('https://ultraverse-nft-market.vercel.app/'));
+  project2Button.addEventListener('click', redirectToProject('https://ultraverse-nft-market.vercel.app/'));
 
   var project3Button = document.getElementById('project3-button');
   project3Button.addEventListener('click', redirectToProject('https://book-library-roan.vercel.app/'));
 
   var project4Button = document.getElementById('project4-button');
-  project2Button.addEventListener('click', redirectToProject('https://gerich-resturant-phi.vercel.app/'));
+  project4Button.addEventListener('click', redirectToProject('https://gerich-resturant-phi.vercel.app/'));
   
   var project5Button = document.getElementById('project5-button');
-  project3Button.addEventListener('click', redirectToProject('https://book-library-roan.vercel.app/'));
+  project5Button.addEventListener('click', redirectToProject('https://book-library-roan.vercel.app/'));
 
 });
 
@@ -78,4 +78,11 @@ function toggleModal() {
   }
   isModalOpen = true;
   document.body.classList += " modal--open";
+}
+
+function showImage(event) {
+  const image = event.target;
+  image.classList.add('loaded');
+  const loadingAnimation = image.parentElement.querySelector('.loading-animation');
+  loadingAnimation.style.display = 'none';
 }

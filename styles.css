@@ -207,6 +207,7 @@ LANDING PAGE
 .social__list {
     margin-top: 16px;
     display: flex;
+    z-index: 10000;
 }
 
 .social__link {

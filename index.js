@@ -16,13 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
   project2Button.addEventListener('click', redirectToProject('https://ultraverse-nft-market.vercel.app/'));
 
   var project3Button = document.getElementById('project3-button');
-  project3Button.addEventListener('click', redirectToProject('https://book-library-roan.vercel.app/'));
+  project3Button.addEventListener('click', redirectToProject('https://barber-template-blond.vercel.app/'));
 
   var project4Button = document.getElementById('project4-button');
-  project4Button.addEventListener('click', redirectToProject('https://gerich-resturant-phi.vercel.app/'));
-  
+  project4Button.addEventListener('click', redirectToProject('https://twitter-clone-eta-olive.vercel.app/'));
+
   var project5Button = document.getElementById('project5-button');
-  project5Button.addEventListener('click', redirectToProject('https://book-library-roan.vercel.app/'));
+  project5Button.addEventListener('click', redirectToProject('https://gerich-resturant-phi.vercel.app/'));
+  
+  var project6Button = document.getElementById('project6-button');
+  project6Button.addEventListener('click', redirectToProject('https://book-library-roan.vercel.app/'));
 
 });
 

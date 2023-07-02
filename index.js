@@ -2,9 +2,9 @@ let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   function redirectToProject(url) {
-    return function(event) {
+    return function (event) {
       event.preventDefault();
       window.location.href = url;
     };
@@ -23,9 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var project5Button = document.getElementById('project5-button');
   project5Button.addEventListener('click', redirectToProject('https://gerich-resturant-phi.vercel.app/'));
-  
+
   var project6Button = document.getElementById('project6-button');
   project6Button.addEventListener('click', redirectToProject('https://book-library-roan.vercel.app/'));
+
+  var project7Button = document.getElementById('project7-button');
+  project7Button.addEventListener('click', redirectToProject('https://book-library-roan.vercel.app/'));
 
 });
 
@@ -33,7 +36,7 @@ function moveBackground(event) {
   const shapes = document.querySelectorAll(".shape");
   const x = event.clientX * scaleFactor
   const y = event.clientY * scaleFactor
-  
+
   for (let i = 0; i < shapes.length; ++i) {
     const isOdd = i % 2 !== 0;
     const boolInt = isOdd ? -1 : 1;
@@ -46,9 +49,9 @@ function toggleContrast() {
   if (contrastToggle) {
     document.body.classList += "dark-theme"
   }
- else {
-  document.body.classList.remove("dark-theme")
- }
+  else {
+    document.body.classList.remove("dark-theme")
+  }
 }
 
 function contact(event) {
@@ -63,20 +66,20 @@ function contact(event) {
       'template_if27uvt',
       event.target,
       'ZyqqbD3tFD30zkvIO',
-  ).then(() => {
-    loading.classList.remove("modal__overlay--visible");
-    success.classList += " modal__overlay--visible"
-  }).catch(() => {
-    loading.classList.remove("modal__overlay--visible");
-    alert(
-      "The email service is temporarily unavailable. Please contact me directly here:"
-    );
-  });
+    ).then(() => {
+      loading.classList.remove("modal__overlay--visible");
+      success.classList += " modal__overlay--visible"
+    }).catch(() => {
+      loading.classList.remove("modal__overlay--visible");
+      alert(
+        "The email service is temporarily unavailable. Please contact me directly here:"
+      );
+    });
 }
 
 function toggleModal() {
   if (isModalOpen) {
-    isModalOpen = false;  
+    isModalOpen = false;
     return document.body.classList.remove("modal--open");
   }
   isModalOpen = true;
